@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/ivBookCover"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="#EEEEEE"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivBookCover"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Book Title" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_toEndOf="@id/ivBookCover"
+            android:text="Author Name" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/ic_menu_delete" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_toStartOf="@id/ivDelete"
+            android:layout_marginEnd="8dp"
+            android:src="@android:drawable/ic_menu_edit" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
