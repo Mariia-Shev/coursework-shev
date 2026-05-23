@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.coursework_shev.R
 import com.example.coursework_shev.database.DatabaseQueryClass
 import com.example.coursework_shev.model.Book
@@ -36,10 +37,18 @@ class BookAdapter(
         holder.tvTitle.text = book.title
         holder.tvAuthor.text = book.author
 
-        // Note: To load the image from the URL string safely, you should add the Glide or Coil
-        // library to your build.gradle and call it here.
-        // Example: Glide.with(holder.itemView.context).load(book.imageUrl).into(holder.ivBookCover)
+// Import Glide at the top of your file: import com.github.bumptech.glide.Glide
 
+        if (!book.imageUrl.isNullOrEmpty()) {
+            Glide.with(holder.itemView.context)
+                .load(book.imageUrl)
+                .placeholder(android.R.drawable.ic_menu_gallery) // Default icon while loading
+                .error(android.R.drawable.ic_menu_report_image)   // Icon if loading fails
+                .into(holder.ivBookCover)
+        } else {
+            // Fallback default background if no image string exists
+            holder.ivBookCover.setImageResource(android.R.drawable.ic_menu_gallery)
+        }
         holder.ivDelete.setOnClickListener {
             AlertDialog.Builder(holder.itemView.context)
                 .setMessage("Are you sure you want to delete this book?")

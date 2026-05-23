@@ -1,99 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="410dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="12dp">
 
     <ImageView
         android:id="@+id/bookImageView"
         android:layout_width="120dp"
         android:layout_height="160dp"
         android:layout_gravity="center"
-        android:background="#E0E0E0"
-        android:scaleType="centerCrop"
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Choose Image"
+        android:layout_marginBottom="16dp" />
 
     <EditText
         android:id="@+id/etTitle"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_width="386dp"
+        android:layout_height="50dp"
         android:hint="Book Title" />
 
     <EditText
         android:id="@+id/etAuthor"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_width="386dp"
+        android:layout_height="50dp"
         android:hint="Author" />
 
     <EditText
         android:id="@+id/etIsbn"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_width="386dp"
+        android:layout_height="50dp"
         android:hint="ISBN Number"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/etImageUrl"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_width="386dp"
+        android:layout_height="50dp"
         android:hint="Image Link (URL)"
         android:inputType="textUri" />
 
-    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.83"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/etImageUrl" />-->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:text="Save" />
 
     <Button
         android:id="@+id/btnCancel"
-        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
         android:text="Cancel" />
 
-    <Button
-            android:id="@+id/btnSave"
-            android:layout_width="150dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_weight="1"
-            android:text="Save"/>
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.195"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/etImageUrl" />-->
-
-
-
-
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:layout_marginTop="16dp">-->
-
-<!--        <Button-->
-<!--            android:id="@+id/btnCancel"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="Cancel"-->
-<!--            style="?android:attr/buttonBarButtonStyle" />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/btnSave"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="Save" />-->
-<!--    </LinearLayout>-->
 </LinearLayout>

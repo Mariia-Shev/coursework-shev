@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteException
 import android.widget.Toast
 import com.example.coursework_shev.model.Book
 
-import com.example.coursework_shev.util.DatabaseConstants.DATABASE_NAME
 import com.example.coursework_shev.util.DatabaseConstants.TABLE_BOOK
 import com.example.coursework_shev.util.DatabaseConstants.COLUMN_ID
 import com.example.coursework_shev.util.DatabaseConstants.COLUMN_ISBN

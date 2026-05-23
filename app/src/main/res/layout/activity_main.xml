@@ -18,121 +18,28 @@
         android:textSize="16sp"
         android:visibility="gone" />
 
+    <Button
+        android:id="@+id/btnClearAll"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Clear All"
+        android:visibility="gone" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="189dp"
         android:src="@android:drawable/ic_input_add"
         app:tint="@android:color/white" />
+
 </RelativeLayout>
-
-
-
-
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:id="@+id/main"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".MainActivity">-->
-
-<!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/bookImageView"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="237dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="345dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginBottom="5dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintBottom_toTopOf="@+id/etTitle"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        tools:srcCompat="@tools:sample/avatars" />&ndash;&gt;-->
-
-<!--&lt;!&ndash;    <EditText&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/etAuthor"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="150px"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginStart="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginEnd="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginBottom="8dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:hint="Author"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintBottom_toTopOf="@+id/etIsbn"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent" />&ndash;&gt;-->
-
-<!--&lt;!&ndash;    <EditText&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/etTitle"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="150px"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginStart="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginTop="8dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginEnd="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginBottom="8dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:hint="Book Title"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintBottom_toTopOf="@+id/etAuthor"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/bookImageView" />&ndash;&gt;-->
-
-<!--&lt;!&ndash;    <EditText&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/etImageUrl"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="150px"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginStart="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginTop="8dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginEnd="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:hint="Image Link (URL)"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:inputType="textUri"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/etIsbn" />&ndash;&gt;-->
-
-<!--&lt;!&ndash;    <EditText&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/etIsbn"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="150px"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginStart="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginEnd="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginBottom="8dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:hint="ISBN Number"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:inputType="number"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintBottom_toTopOf="@+id/etImageUrl"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent" />&ndash;&gt;-->
-
-<!--&lt;!&ndash;    <Button&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/btnCancel"&ndash;&gt;-->
-<!--&lt;!&ndash;        style="?android:attr/buttonBarButtonStyle"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="150dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="70dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginBottom="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_weight="1"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:text="Cancel"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintHorizontal_bias="0.83"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/etImageUrl" />&ndash;&gt;-->
-
-<!--&lt;!&ndash;    <Button&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/btnSave"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="150dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="70dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginBottom="20dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_weight="1"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:text="Save"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintHorizontal_bias="0.195"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/etImageUrl" />&ndash;&gt;-->
-
-
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
